@@ -1,9 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../js/vue.js" defer></script>
 </head>
 <body>
-    
+    <div id="root">
+        <h1>Cookie Clicker</h1>
+        <br>
+        <div class="div-flex">
+            <div>
+                <h2>Cookies!</h2>
+                <p>{{ messageNumeroCookies }}</p>
+                <p>{{ messageCookiesPorSegundo }}</p>
+                <button v-on:click="novoCookie">Cooookieee</button>
+            </div>
+            <div>
+                <h3>Cursor</h3>
+                <p>{{ messageNumeroCursor }}</p>
+            </div>
+            <div>
+                <div>
+                    <table>
+
+                    </table>
+                </div>
+                <div>
+                    <h3>Loja</h3>
+                    <button v-on:click="novoCursor">{{ messageComprarCursor }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+.div-flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.div-flex > div{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-style: groove;
+    padding: 5%;
+}
+#root {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
